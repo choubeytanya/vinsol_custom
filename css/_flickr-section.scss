@@ -1,0 +1,33 @@
+.flickr {
+  padding-right: 13px;
+}
+
+.left-section {
+  margin: 20px 0;
+  text-align: center;
+  &::after {
+    @include line($grey, 25px);
+  }
+}
+
+.footer-heading {
+  font-size: 11px;
+}
+
+.footer-image {
+  position: relative;
+  display: inline-block;
+}
+
+.footer-img2 {
+  left: 16px;
+  top: 7px;
+  transform: rotate(8deg);
+  position: absolute;
+}
+
+.footer-img1 {
+  position: relative;
+  z-index: 2;
+}
+

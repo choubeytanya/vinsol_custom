@@ -1,0 +1,18 @@
+@import "variable";
+@import "mixins";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+@import "navigation";
+@import "header.scss";
+@import "main-section";
+@import "footer-section";
+@import "media";

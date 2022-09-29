@@ -1,0 +1,30 @@
+.dropdown {
+  display: inline-block;
+}
+.dropdown-btn {
+  border: none;
+  color: $blue;
+  background-color: $white;
+  padding: 8px;
+}
+.dropdown:hover > .dropdown-menu {
+  display:block;
+  border: 1px solid $black;
+  width: 200px;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: $white;
+}
+.dropdown-link {
+  color: $blue;
+  display:block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0;
+  &:hover {
+    color: $white;
+    background-color: $aqua;
+  }
+}

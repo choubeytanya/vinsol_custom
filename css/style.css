@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.navbar,
+.navbar-nav {
+  display: flex; }
+
+.navbar {
+  justify-content: space-between;
+  align-items: center; }
+  .navbar .nav-item {
+    list-style: none;
+    margin: 0 8px; }
+  .navbar .nav-link {
+    text-decoration: none;
+    color: #726b6b; }
+    .navbar .nav-link:hover {
+      color: black; }
+  .navbar .active {
+    color: #f0a00c; }
+    .navbar .active:hover {
+      color: #dca743; }
+
+.top-header .header-items {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid grey;
+  padding: 15px 0; }
+.top-header .header-logo {
+  width: 215px;
+  margin-right: 32px; }
+  .top-header .header-logo .header-image {
+    width: inherit; }
+.top-header .header-para {
+  font-family: "Didact Gothic", sans-serif;
+  padding: 0 32px;
+  font-size: 32px; }
+
+.main-section .dropdown {
+  display: inline-block; }
+.main-section .dropdown-btn {
+  border: none;
+  color: blue;
+  background-color: white;
+  padding: 8px; }
+.main-section .dropdown:hover > .dropdown-menu {
+  display: block;
+  border: 1px solid black;
+  width: 200px; }
+.main-section .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white; }
+.main-section .dropdown-link {
+  color: blue;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 0; }
+  .main-section .dropdown-link:hover {
+    color: white;
+    background-color: #40a3ba; }
+.main-section .items {
+  display: flex;
+  flex-wrap: wrap; }
+  .main-section .items .itembox {
+    width: 33.33%;
+    padding: 10px !important;
+    cursor: pointer; }
+    .main-section .items .itembox .item-image {
+      width: 100%; }
+    .main-section .items .itembox:hover .item-image {
+      transform: scale(1.05, 1.05);
+      transition-duration: 0.5s; }
+  .main-section .items .itembox-heading {
+    font-size: 21px;
+    color: blue; }
+  .main-section .items .itembox-para {
+    font-size: 14px; }
+
+.footer-section {
+  background-color: #c9cccc;
+  box-shadow: 2px 0 5px grey inset;
+  margin-top: 30px; }
+  .footer-section .footer-container {
+    position: relative;
+    display: flex;
+    padding: 20px 5px; }
+    .footer-section .footer-container > div {
+      flex: 1; }
+  .footer-section .flickr {
+    padding-right: 13px; }
+  .footer-section .left-section {
+    margin: 20px 0;
+    text-align: center; }
+    .footer-section .left-section::after {
+      content: "";
+      background-color: grey;
+      height: 1px;
+      width: 200px;
+      display: block;
+      margin: 25px auto; }
+  .footer-section .footer-heading {
+    font-size: 11px; }
+  .footer-section .footer-image {
+    position: relative;
+    display: inline-block; }
+  .footer-section .footer-img2 {
+    left: 16px;
+    top: 7px;
+    transform: rotate(8deg);
+    position: absolute; }
+  .footer-section .footer-img1 {
+    position: relative;
+    z-index: 2; }
+  .footer-section .more {
+    text-align: center; }
+  .footer-section .see-more,
+  .footer-section .follow {
+    text-decoration: none;
+    color: #f0a00c; }
+    .footer-section .see-more:hover,
+    .footer-section .follow:hover {
+      text-decoration: underline; }
+  .footer-section .footer-para {
+    font-size: 14px;
+    margin-top: 6px; }
+  .footer-section .time,
+  .footer-section .tweet-link {
+    display: flex;
+    align-items: center; }
+  .footer-section .tweet-timing,
+  .footer-section .contact-link {
+    font-size: 9px; }
+  .footer-section .contact-list {
+    list-style: none;
+    margin: 0 5px; }
+  .footer-section .email,
+  .footer-section .contact-link {
+    color: #f0a00c;
+    text-decoration: none; }
+  .footer-section .media-handler::after {
+    content: "";
+    background-color: grey;
+    height: 1px;
+    width: 200px;
+    display: block;
+    margin: 25px auto; }
+  .footer-section .box {
+    position: relative;
+    top: -25px;
+    background: #f0a00c;
+    text-align: center; }
+    .footer-section .box .box-heading::after,
+    .footer-section .box .mailer::after {
+      content: "";
+      background-color: white;
+      height: 1px;
+      width: 200px;
+      display: block;
+      margin: 5px auto; }
+    .footer-section .box .box-heading {
+      font-size: 32px;
+      color: white; }
+    .footer-section .box .India,
+    .footer-section .box .USA,
+    .footer-section .box .mailer {
+      font-size: 18px;
+      color: black;
+      text-decoration: none; }
+    .footer-section .box .bold {
+      font-weight: bold; }
+    .footer-section .box .talk-btn {
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      color: #f0a00c;
+      margin: 10px 0; }
+      .footer-section .box .talk-btn:hover {
+        background-color: beige; }
+    .footer-section .box .contact-icon {
+      color: white;
+      margin: 5px 10px;
+      font-size: 20px; }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .navbar {
+    flex-direction: column; }
+
+  .top-header .header-items {
+    flex-direction: column;
+    justify-content: center; }
+  .top-header .container {
+    display: flex;
+    flex-direction: column; }
+  .top-header .header-logo {
+    margin-right: 0; }
+  .top-header .header-para {
+    padding: 0;
+    text-align: center; }
+
+  .main-section .dropdown {
+    text-align: center; }
+  .main-section .items {
+    flex-direction: column; }
+    .main-section .items .itembox {
+      margin: 10px auto !important;
+      width: 80%; }
+
+  .footer-section {
+    background-color: #353232;
+    color: white;
+    display: flex; }
+    .footer-section .footer-container {
+      flex-direction: column; }
+    .footer-section .flickr {
+      order: 2;
+      padding: 0; }
+    .footer-section .media {
+      order: 3;
+      padding: 0; }
+    .footer-section .box {
+      padding: 30px 0;
+      width: 70%;
+      margin: 0 auto; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  .footer-img1,
+  .footer-img2 {
+    width: 100%; }
+
+  .footer-section .contact-list {
+    margin: 0 5px !important; } }
+
+/*# sourceMappingURL=style.css.map */

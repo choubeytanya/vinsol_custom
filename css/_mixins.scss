@@ -1,0 +1,15 @@
+@mixin line($col, $margin) {
+    content: "";
+    background-color: $col;
+    height: 1px;
+    width: 200px;
+    display: block;
+    margin: $margin auto;
+}
+
+@mixin navlink($col, $hov-col) {
+    color: $col;
+    &:hover {
+      color: $hov-col;
+    }
+  }

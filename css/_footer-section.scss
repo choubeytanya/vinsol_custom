@@ -1,0 +1,30 @@
+.footer-section {
+  background-color: $light-blue;
+  box-shadow: 2px 0 5px $grey inset;
+  margin-top: 30px;
+  .footer-container {
+    position: relative;
+    display: flex;
+    padding: 20px 5px;
+    & > div {
+      flex: 1;
+    }
+  }
+
+  @import "flickr-section";
+  .more {
+    text-align: center;
+  }
+
+  .see-more,
+  .follow {
+    text-decoration: none;
+    color: $orange;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @import "tweet";
+
+  @import "box";
+}

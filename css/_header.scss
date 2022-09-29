@@ -1,0 +1,20 @@
+.top-header {
+    .header-items {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid $grey;
+      padding: 15px 0;
+    }
+    .header-logo {
+      width: 215px;
+      margin-right: 32px;
+      .header-image {
+        width: inherit;
+      }
+    }
+    .header-para {
+      font-family: $font;
+      padding: 0 32px;
+      font-size:32px;
+    }
+}  

@@ -1,0 +1,45 @@
+.box {
+    position: relative;
+    top: -25px;
+    background: $orange;
+    text-align: center;
+    .box-heading,
+    .mailer {
+      &::after {
+        @include line($white, 5px);
+      }
+    }
+    .box-heading {
+      font-size: 32px;
+      color: $white;
+    }
+
+    .India,
+    .USA,
+    .mailer {
+      font-size: 18px;
+      color: $black;
+      text-decoration: none;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .talk-btn {
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      color: $orange;
+      margin: 10px 0;
+      &:hover {
+        background-color: $beige;
+      }
+    }
+
+    .contact-icon {
+      color: $white;
+      margin: 5px 10px;
+      font-size: 20px;
+    }
+}

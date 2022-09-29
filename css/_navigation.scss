@@ -1,0 +1,22 @@
+.navbar,
+.navbar-nav {
+  display: flex;
+}
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  .nav-item {
+    list-style: none;
+    margin: 0 8px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    @include navlink($light-grey, $black);
+  }
+
+  .active {
+    @include navlink($orange, $light-orange);
+  }
+}

@@ -1,0 +1,28 @@
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    .itembox {
+      width: 33.33%;
+      padding: 10px !important;
+      cursor: pointer;
+
+      .item-image {
+        width: 100%;
+      }
+
+      &:hover {
+        .item-image {
+          transform: scale(1.05, 1.05);
+          transition-duration: 0.5s;
+        }
+      }
+      
+    }
+    .itembox-heading {
+      font-size: 21px;
+      color: $blue;
+    }
+    .itembox-para {
+      font-size: 14px;
+    }
+  }

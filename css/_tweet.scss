@@ -1,0 +1,32 @@
+
+  .footer-para {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .time,
+  .tweet-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .tweet-timing,
+  .contact-link {
+    font-size: 9px;
+  }
+
+  .contact-list {
+    list-style: none;
+    margin: 0 5px;
+  }
+
+  .email,
+  .contact-link {
+    color: $orange;
+    text-decoration: none;
+  }
+
+  .media-handler {
+    &::after {
+      @include line($grey, 25px);
+    }
+  }
